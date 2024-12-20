@@ -1,0 +1,8 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"Ex2.c" LINE:64
+dry DSTACK_USAGE:2 DSTACK_LEVEL:2 FILE:"Ex2.c" LINE:51
+display_messages DSTACK_USAGE:2 DSTACK_LEVEL:4 FILE:"Ex2.c" LINE:17
+lcd_puts DSTACK_USAGE:3 DSTACK_LEVEL:7 FILE:"C:\Code_vison_32\lib\alcd.lib" LINE:279
+lcd_putchar DSTACK_USAGE:1 DSTACK_LEVEL:8 FILE:"C:\Code_vison_32\lib\alcd.lib" LINE:265
+lcd_gotoxy DSTACK_USAGE:2 DSTACK_LEVEL:10 FILE:"C:\Code_vison_32\lib\alcd.lib" LINE:247
+_lcd_write_data DSTACK_USAGE:1 DSTACK_LEVEL:11 FILE:"C:\Code_vison_32\lib\alcd.lib" LINE:161
+_lcd_write_nibble DSTACK_USAGE:1 DSTACK_LEVEL:12 FILE:"C:\Code_vison_32\lib\alcd.lib" LINE:139
