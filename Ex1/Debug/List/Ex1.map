@@ -1,0 +1,45 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+glcd_state                                                                        0x0500      29
+input_password                                                                    0x051D       5
+keypad                                                                            0x0522      18
+gfx_addr                                                                          0x0534       2
+gfx_buffer                                                                        0x0536     504
+_base_y                                                                           0x072E       4
+_seed                                                                             0x0732       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+checksum                                                                          R4,R5        2
+x                                                                                 R7           1
+nhietdo                                                                           R6           1
+doam                                                                              R9           1
+_lcd_x                                                                            R8           1
+_lcd_y                                                                            R11          1
+_lcd_maxx                                                                         R10          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+dht11                                                                             0x000D0    127
+hien_thi                                                                          0x0014F     42
+BUTTON                                                                            0x00179    163
+display_max_ht                                                                    0x0021C     43
+main                                                                              0x00247     52
+_lcd_write_nibble_G103                                                            0x0027B     37
+_lcd_write_data                                                                   0x002A0     12
+lcd_gotoxy                                                                        0x002AC     13
+lcd_clear                                                                         0x002B9     12
+lcd_putchar                                                                       0x002C5     21
+lcd_putsf                                                                         0x002DA     19
+put_buff_G104                                                                     0x002ED     64
+_print_G104                                                                       0x0032D    308
+sprintf                                                                           0x00461     52
+strlen                                                                            0x00495     12
+strlenf                                                                           0x004A1     13
