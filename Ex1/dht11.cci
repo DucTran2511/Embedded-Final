@@ -1,9 +1,0 @@
-VERSION:3 SOURCE_TIMESTAMP:59946854
-NODE:I LEVEL:0 LINE:1 "C:\Code_vison_32\inc\io.h"
-NODE:I LEVEL:0 LINE:2 "C:\Code_vison_32\inc\alcd.h"
-NODE:I LEVEL:0 LINE:3 "C:\Code_vison_32\inc\delay.h"
-NODE:M LEVEL:0 LINE:5 "PIN_DHT"
-NODE:M LEVEL:0 LINE:6 "PORT_DHT"
-NODE:M LEVEL:0 LINE:7 "DDR_DHT"
-NODE:V LEVEL:0 LINE:9 "checksum -> R4,R5"
-NODE:F LEVEL:0 LINE:11 "dht11(unsigned char * nhietdo,unsigned char * doam)"
