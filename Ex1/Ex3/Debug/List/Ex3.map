@@ -1,0 +1,67 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+glcd_state                                                                        0x051C      29
+_base_y                                                                           0x0539       4
+gfx_addr                                                                          0x053D       2
+gfx_buffer                                                                        0x053F     504
+_seed                                                                             0x0737       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+_lcd_x                                                                            R5           1
+_lcd_y                                                                            R4           1
+_lcd_maxx                                                                         R7           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+init_glcd                                                                         0x001A7     20
+init_alcd                                                                         0x001BB      6
+glcd_list                                                                         0x001C1     24
+alcd_list                                                                         0x001D9     32
+giat                                                                              0x001F9     21
+vat                                                                               0x0020E      5
+main                                                                              0x00213     30
+put_buff_G100                                                                     0x00231     58
+_print_G100                                                                       0x0026B    308
+sprintf                                                                           0x0039F     52
+_lcd_write_nibble_G101                                                            0x003D3     38
+_lcd_write_data                                                                   0x003F9     12
+lcd_gotoxy                                                                        0x00405     13
+lcd_clear                                                                         0x00412     12
+lcd_putchar                                                                       0x0041E     21
+lcd_puts                                                                          0x00433     12
+lcd_init                                                                          0x0043F     46
+pcd8544_delay_G102                                                                0x0046D      1
+pcd8544_wrbus_G102                                                                0x0046E     46
+pcd8544_wrcmd                                                                     0x0049C      9
+pcd8544_wrdata_G102                                                               0x004A5      9
+pcd8544_setaddr_G102                                                              0x004AE     23
+pcd8544_gotoxy                                                                    0x004C5     14
+pcd8544_rdbyte                                                                    0x004D3     14
+pcd8544_wrbyte                                                                    0x004E1     10
+glcd_init                                                                         0x004EB    156
+glcd_display                                                                      0x00587     11
+glcd_clear                                                                        0x00592     30
+pcd8544_wrmasked_G102                                                             0x005B0     57
+glcd_block                                                                        0x005E9    490
+glcd_clipx                                                                        0x007D3     21
+glcd_clipy                                                                        0x007E8     19
+glcd_getcharw_G103                                                                0x007FB    111
+glcd_new_line_G103                                                                0x0086A     20
+glcd_putchar                                                                      0x0087E     98
+glcd_outtextxy                                                                    0x008E0     15
+glcd_moveto                                                                       0x008EF     13
+memset                                                                            0x008FC     16
+strlen                                                                            0x0090C     12
+strlenf                                                                           0x00918     13
+glcd_getmask                                                                      0x00925     11
+glcd_mappixcolor1bit                                                              0x00930     40
+glcd_readmem                                                                      0x00958     31
+glcd_writemem                                                                     0x00977     31
