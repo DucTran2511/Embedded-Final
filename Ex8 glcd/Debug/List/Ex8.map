@@ -1,0 +1,69 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+glcd_state                                                                        0x0537      29
+last_hour                                                                         0x0554       1
+last_minute                                                                       0x0555       1
+last_second                                                                       0x0556       1
+gfx_addr                                                                          0x0557       2
+gfx_buffer                                                                        0x0559     504
+_seed                                                                             0x0751       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+hour                                                                              R5           1
+minute                                                                            R4           1
+second                                                                            R7           1
+feed_hour                                                                         R6           1
+feed_minute                                                                       R9           1
+d                                                                                 R10,R11      2
+dem                                                                               R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+init_glcd                                                                         0x001BB     19
+timer0_ovf_isr                                                                    0x001CE     31
+display_time_glcd                                                                 0x001ED     48
+countdown_display_glcd                                                            0x0021D     30
+main                                                                              0x0023B    116
+pcd8544_delay_G100                                                                0x002AF      1
+pcd8544_wrbus_G100                                                                0x002B0     45
+pcd8544_wrcmd                                                                     0x002DD      9
+pcd8544_wrdata_G100                                                               0x002E6      9
+pcd8544_setaddr_G100                                                              0x002EF     23
+pcd8544_gotoxy                                                                    0x00306     13
+pcd8544_rdbyte                                                                    0x00313     14
+pcd8544_wrbyte                                                                    0x00321      7
+glcd_init                                                                         0x00328    157
+glcd_display                                                                      0x003C5     11
+glcd_clear                                                                        0x003D0     30
+pcd8544_wrmasked_G100                                                             0x003EE     57
+glcd_block                                                                        0x00427    481
+glcd_clipx                                                                        0x00608     21
+glcd_clipy                                                                        0x0061D     19
+glcd_getcharw_G101                                                                0x00630    111
+glcd_new_line_G101                                                                0x0069F     20
+glcd_putchar                                                                      0x006B3     98
+glcd_outtextxy                                                                    0x00715     21
+glcd_moveto                                                                       0x0072A     13
+put_buff_G102                                                                     0x00737     63
+_print_G102                                                                       0x00776    308
+sprintf                                                                           0x008AA     52
+rtc_init                                                                          0x008DE     26
+rtc_get_time                                                                      0x008F8     35
+rtc_set_time                                                                      0x0091B     26
+memset                                                                            0x00935     16
+strlen                                                                            0x00945     12
+strlenf                                                                           0x00951     13
+glcd_getmask                                                                      0x0095E     11
+glcd_mappixcolor1bit                                                              0x00969     40
+glcd_readmem                                                                      0x00991     31
+glcd_writemem                                                                     0x009B0     31
+bcd2bin                                                                           0x009CF     13
+bin2bcd                                                                           0x009DC     10
