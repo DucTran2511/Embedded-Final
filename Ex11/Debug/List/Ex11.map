@@ -1,0 +1,45 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+keypad                                                                            0x052B      18
+input_password                                                                    0x053D       4
+correct_password                                                                  0x0541       4
+lock_triggered                                                                    0x0545       2
+dem                                                                               0x0547       2
+_base_y                                                                           0x0549       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+remaining_attempts                                                                R4,R5        2
+_lcd_x                                                                            R7           1
+_lcd_y                                                                            R6           1
+_lcd_maxx                                                                         R9           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer0_ovf_isr                                                                    0x000BE     50
+BUTTON                                                                            0x000F0    116
+handle_correct_password                                                           0x00164      9
+handle_wrong_password                                                             0x0016D     56
+my_strcmp                                                                         0x001A5     38
+main                                                                              0x001CB     56
+_lcd_write_nibble_G100                                                            0x00203     37
+_lcd_write_data                                                                   0x00228     12
+lcd_gotoxy                                                                        0x00234     13
+lcd_clear                                                                         0x00241     12
+lcd_putchar                                                                       0x0024D     21
+lcd_puts                                                                          0x00262     17
+lcd_init                                                                          0x00273     47
+put_buff_G101                                                                     0x002A2     64
+_print_G101                                                                       0x002E2    308
+sprintf                                                                           0x00416     52
+eeprom_read_block                                                                 0x0044A     25
+eeprom_write_block                                                                0x00463     28
+strlen                                                                            0x0047F     12
+strlenf                                                                           0x0048B     13
