@@ -1,0 +1,17 @@
+/*
+ * Ex9.c
+ *
+ * Created: 12/21/2024 10:14:46 PM
+ * Author: ADMIN
+ */
+
+#include <io.h>
+
+void main(void)
+{
+while (1)
+    {
+    // Please write your application code here
+
+    }
+}
