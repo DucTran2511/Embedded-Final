@@ -1,0 +1,42 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+_base_y                                                                           0x0500       4
+_lcd_y                                                                            0x0504       1
+_lcd_maxx                                                                         0x0505       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+hour                                                                              R5           1
+minute                                                                            R4           1
+second                                                                            R7           1
+feed_hour                                                                         R6           1
+feed_minute                                                                       R9           1
+d                                                                                 R10,R11      2
+dem                                                                               R12,R13      2
+_lcd_x                                                                            R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer0_ovf_isr                                                                    0x0009F     31
+display_time_lcd                                                                  0x000BE     24
+countdown_display_lcd                                                             0x000D6     24
+main                                                                              0x000EE    108
+_lcd_write_nibble_G100                                                            0x0015A     37
+_lcd_write_data                                                                   0x0017F     12
+lcd_gotoxy                                                                        0x0018B     15
+lcd_clear                                                                         0x0019A     13
+lcd_putchar                                                                       0x001A7     26
+lcd_putsf                                                                         0x001C1     18
+lcd_init                                                                          0x001D3     48
+rtc_init                                                                          0x00203     23
+rtc_get_time                                                                      0x0021A     37
+rtc_set_time                                                                      0x0023F     28
+bcd2bin                                                                           0x0025B     13
+bin2bcd                                                                           0x00268     10
